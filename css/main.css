@@ -1,0 +1,203 @@
+*{
+  margin: 0 auto;
+  padding: 0;
+}
+
+body{
+  background-color:rgb(65, 26, 170);
+}
+
+header, footer{
+  border: #080606 solid 1px;
+  padding: 20px;
+  color: rgb(0, 255, 42);
+  background-color: #080606;
+}
+
+
+
+#project{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  padding: 10px;
+
+  
+}
+.project{
+  position: relative; 
+  max-width: 400px;
+  margin: 40px; 
+}
+
+.image{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  color: #ffffff;
+  border-radius: 10%;
+}
+
+.project:hover {
+  transform: rotate(360deg);
+  transition-duration: 1.5s;
+}
+
+.startName {
+ position: absolute;
+  top: 10px;
+  left: 20px;
+  right: 100px;
+  color: whitesmoke;
+  background-color: rgb(14, 40, 63);
+  border: 5px solid rgb(14, 40, 63);
+  border-radius: 10px;
+  font-family: 'Sansita', sans-serif;
+} 
+
+.description {
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  color: rgb(14, 40, 63);
+  background-color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid rgb(65, 26, 170);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.project-selected {
+  background: rgb(255, 255, 255);
+  width: 850px;
+  height: auto;
+  margin: 50px auto ;
+  border-left:50px solid rgb(0, 255, 42);
+  border-right:50px solid rgb(0, 255, 42);
+  border-bottom:100px solid rgba(0, 0, 0, 0.86);
+  border-top: 100px solid rgba(0, 0, 0, 0.86);
+  border-radius: 40px;
+}
+
+.project-selected div :hover{
+  transform: scale(1.1);
+  transition-duration: 4s;
+}
+
+
+.project-selected > span {
+  display: block;
+  font-size: 82px;
+  line-height: 160px;
+  text-align: center;
+  width: 160px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.project-detail {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: auto;
+
+  background: rgba(0, 0, 0, 0.86);
+
+  transition: all 268ms ease-in-out 0s;
+  transform:  scale(0);
+}
+
+.project-detail.open {
+  transform: scale(1);
+}
+
+.likes{
+  position: absolute;
+  bottom: 15px;
+  left: 40px;
+  color:   rgb(0, 255, 42);
+}
+
+.views{
+  position: absolute;
+  bottom: 15px;
+  right: 40px;
+  color:   rgb(0, 255, 42);
+}
+
+.detail .titel{
+  margin: 10px;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  font-family: 'Sansita', sans-serif;
+}
+
+.detail .image{
+  float: left;
+  margin: 20px;
+  
+}
+
+.main p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.detail {
+  position: relative;
+  border: 10px solid rgb(65, 26, 170);
+  overflow: hidden;
+}
+
+.detail .content {
+  position: relative;
+  top: 30px;
+  margin-bottom: 50px;
+}
+
+.tag {
+  display: flex;
+  justify-content: space-between;
+  bottom: 2px;
+  left: 2px;
+ margin: 10px;
+
+}
+
+.tag p{
+  border:1px solid #080606;
+  background-color: #bdbdbd;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.media{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.comment{
+  display: flex;
+  justify-content: space-around;
+  border: #bdbdbd 1px solid;
+  text-align: left;
+}
+
+.team {
+  display: grid;
+  border: #080606 2px solid;
+  margin: 5px;
+}
+
+.date, .dates , .comments, .tag{
+  margin: 30px;
+}
+
+.teams{
+  margin: 50px;
+}
+
+
